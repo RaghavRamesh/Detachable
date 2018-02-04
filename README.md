@@ -1,5 +1,5 @@
 # Detachable
-This utility allows you to cancel the handling of a asynchronous/delayed callback, even after the invocation of the asynchronous function.
+This utility allows you to cancel the handling of an asynchronous/delayed callback, even after the invocation of the asynchronous function.
 
 ### How it works
 The utility accepts a handler/a list of handlers, and returns a thin wrapper around the original handler(s). If desired, these wrapped handlers can be detached by the handler creator, before they are dispatched. 
