@@ -7,3 +7,6 @@ The utility accepts a handler/a list of handlers, and returns a thin wrapper aro
 Notes: 
 - In JavaScript, handlers (callbacks) cannot be prevented from executing. This utility merely prevents the original handlers from executing when the detachable handlers dispatch).
 - The simpler alternative would be to use a flag that can be set by the handler creator to indicatethat the handlers should prevent their default behaviour (if desired). Depending on the state of this flag, the handlers can perform their default behaviour or otherwise. The value provided by this utility class is that it aids in establishing a more elegant convention that improvescode readability. 
+
+### Acknowledgements
+- Developed under the guidance of Ian Loh, Product Team Lead at G Element 
