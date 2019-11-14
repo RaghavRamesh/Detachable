@@ -1,0 +1,25 @@
+{
+  "name": "detachable",
+  "version": "1.0.0",
+  "description": "This utility allows you to cancel the handling of an asynchronous/delayed callback, even after the invocation of the asynchronous function.",
+  "main": "Detachable.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RaghavRamesh/Detachable.git"
+  },
+  "keywords": [
+    "callback",
+    "cancellable callback",
+    "detachable callback",
+    "async"
+  ],
+  "author": "Raghav Ramesh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RaghavRamesh/Detachable/issues"
+  },
+  "homepage": "https://github.com/RaghavRamesh/Detachable#readme"
+}
