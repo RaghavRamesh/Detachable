@@ -29,7 +29,7 @@
 function Detachable(actualHandlers) {
   let _actualHandlers = [];
   
-  console.assert(arguments.length === 1, 'Invalid paramter: Expected num of args: 1, Found: ['+arguments.length+']');
+  console.assert(arguments.length === 1, 'Invalid parameter: Expected num of args: 1, Found: ['+arguments.length+']');
   console.assert(typeof actualHandlers === 'function' || Array.isArray(actualHandlers), 
                 'Invalid parameter: Expected type: "function" or "Array"; Found: [' + typeof actualHandlers + ']');
   if (typeof actualHandlers === 'function') {
@@ -40,7 +40,7 @@ function Detachable(actualHandlers) {
       const isAllArrayContentsFunctions = actualHandlers.every(function(item) {
         return typeof item === 'function';
       });
-      console.assert(isAllArrayContentsFunctions, 'Invalid paramter: All values of actualHandlers are not of type "function"');
+      console.assert(isAllArrayContentsFunctions, 'Invalid parameter: All values of actualHandlers are not of type "function"');
       if (isAllArrayContentsFunctions) {
         _actualHandlers = actualHandlers;  
       } else {
@@ -56,7 +56,7 @@ function Detachable(actualHandlers) {
     return;
   }
   
-  let _wrappedHandlersBound = [];
+  const _wrappedHandlersBound = [];
   for (let i = 0; i < _actualHandlers.length; i++) {
     const _wrappedHandler = function() {
       if (_actualHandlers !== null) {
@@ -91,3 +91,5 @@ function Detachable(actualHandlers) {
   });
   return returnObject;
 }
+
+module.exports = Detachable
