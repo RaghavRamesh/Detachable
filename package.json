@@ -1,6 +1,6 @@
 {
   "name": "detachable",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "This utility allows you to cancel the handling of an asynchronous/delayed callback, even after the invocation of the asynchronous function.",
   "main": "Detachable.js",
   "scripts": {
